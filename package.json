@@ -1,0 +1,23 @@
+{
+  "name": "rollup-plugin-nodent",
+  "version": "0.0.0",
+  "description": "Rollup plugin for ES2017 async/await keywords ",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo"
+  },
+  "keywords": [
+    "rollup-plugin",
+    "async",
+    "await"
+  ],
+  "author": "Olivier Ligot <oligot@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "nodent": "^3.0.17",
+    "rollup-pluginutils": "^2.0.1"
+  },
+  "devDependencies": {
+    "xo": "^0.18.2"
+  }
+}
