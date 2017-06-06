@@ -1,7 +1,7 @@
 {
   "name": "rollup-plugin-nodent",
   "version": "0.0.0",
-  "description": "Rollup plugin for ES2017 async/await keywords ",
+  "description": "Rollup plugin for ES2017 async/await keywords",
   "main": "index.js",
   "scripts": {
     "test": "xo"
