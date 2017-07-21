@@ -4,10 +4,13 @@ const createFilter = require('rollup-pluginutils').createFilter;
 module.exports = function (options) {
 	options = options || {};
 	const filter = createFilter(options.include, options.exclude);
-	options.sourcemap = options.sourceMap || true;
 
 	return {
 		name: 'nodent',
+		options(opts) {
+			// Convert from Rollup style source map to nodent style sourcemap
+			options.sourcemap = opts.sourceMap || false;
+		},
 		transform(code, id) {
 			if (!filter(id)) {
 				return;
