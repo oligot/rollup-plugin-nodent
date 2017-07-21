@@ -13,13 +13,16 @@ npm install --save-dev rollup-plugin-nodent
 ## Usage
 
 ```js
-import { rollup } from 'rollup';
+// rollup.config.js
 import nodent from 'rollup-plugin-nodent';
 
-rollup({
+export default {
   entry: 'main.js',
-  plugins: [nodent()]
-}).then(...)
+  dest: 'bundle.js',
+  format: 'iife',
+  plugins: [nodent()],
+  sourceMap: true
+};
 ```
 
 ## License
