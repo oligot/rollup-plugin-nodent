@@ -13,6 +13,7 @@
   ],
   "author": "Olivier Ligot <oligot@gmail.com>",
   "license": "MIT",
+  "repository": "oligot/rollup-plugin-nodent",
   "dependencies": {
     "nodent": "^3.0.17",
     "rollup-pluginutils": "^2.0.1"
