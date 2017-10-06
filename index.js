@@ -7,9 +7,9 @@ module.exports = function (options = {}) {
 	return {
 		name: 'nodent',
 		options(opts) {
-			options.sourcemap = 'sourcemap' in options ? options.sourcemap // Plugin options
-			: 'sourcemap' in opts ? opts.sourcemap // Rollup options
-			: opts.sourceMap !== false; // Old style Rollup options
+			options.sourcemap = 'sourcemap' in options ? options.sourcemap : // Plugin options
+			'sourcemap' in opts ? opts.sourcemap : // Rollup options
+			opts.sourceMap !== false; // Old style Rollup options
 		},
 		transform(code, id) {
 			if (!filter(id)) {
