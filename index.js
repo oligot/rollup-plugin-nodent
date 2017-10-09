@@ -1,7 +1,8 @@
 const nodent = require('nodent')();
 const createFilter = require('rollup-pluginutils').createFilter;
 
-module.exports = function (options = {}) {
+module.exports = function (options) {
+	options = options || {};
 	const filter = createFilter(options.include, options.exclude);
 
 	return {

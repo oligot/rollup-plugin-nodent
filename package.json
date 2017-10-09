@@ -3,6 +3,9 @@
   "version": "0.1.2",
   "description": "Rollup plugin for ES2017 async/await keywords",
   "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
   "scripts": {
     "test": "xo"
   },
