@@ -592,12 +592,6 @@ ignore@^3.3.3:
   version "3.3.7"
   resolved "http://nexus.groups.local/content/groups/npm-all/ignore/-/ignore-3.3.7.tgz#612289bfb3c220e186a58118618d5be8c1bab021"
 
-import-from@^2.1.0:
-  version "2.1.0"
-  resolved "http://nexus.groups.local/content/groups/npm-all/import-from/-/import-from-2.1.0.tgz#335db7f2a7affd53aaa471d4b8021dee36b7f3b1"
-  dependencies:
-    resolve-from "^3.0.0"
-
 import-modules@^1.1.0:
   version "1.1.0"
   resolved "http://nexus.groups.local/content/groups/npm-all/import-modules/-/import-modules-1.1.0.tgz#748db79c5cc42bb9701efab424f894e72600e9dc"
@@ -879,9 +873,9 @@ natural-compare@^1.4.0:
   version "1.4.0"
   resolved "http://nexus.groups.local/content/groups/npm-all/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
 
-nodent-compiler@^3.1.5:
-  version "3.1.5"
-  resolved "http://nexus.groups.local/content/groups/npm-all/nodent-compiler/-/nodent-compiler-3.1.5.tgz#8c09289eacf7256bda89c2b88941681d5cccf80c"
+nodent-compiler@^3.1.6:
+  version "3.1.6"
+  resolved "http://nexus.groups.local/content/groups/npm-all/nodent-compiler/-/nodent-compiler-3.1.6.tgz#1fd2b37625f127405d90ddc9cf7a059affef82f5"
   dependencies:
     acorn ">=2.5.2"
     acorn-es7-plugin ">=1.1.6"
@@ -1105,10 +1099,6 @@ require-uncached@^1.0.3:
 resolve-from@^1.0.0:
   version "1.0.1"
   resolved "http://nexus.groups.local/content/groups/npm-all/resolve-from/-/resolve-from-1.0.1.tgz#26cbfe935d1aeeeabb29bc3fe5aeb01e93d44226"
-
-resolve-from@^3.0.0:
-  version "3.0.0"
-  resolved "http://nexus.groups.local/content/groups/npm-all/resolve-from/-/resolve-from-3.0.0.tgz#b22c7af7d9d6881bc8b6e653335eebcb0a188748"
 
 resolve@^1.5.0:
   version "1.5.0"

@@ -19,8 +19,7 @@
   "repository": "oligot/rollup-plugin-nodent",
   "dependencies": {
     "acorn-dynamic-import": "^3.0.0",
-    "import-from": "^2.1.0",
-    "nodent-compiler": "^3.1.5",
+    "nodent-compiler": "^3.1.6",
     "rollup-pluginutils": "^2.0.1"
   },
   "devDependencies": {
