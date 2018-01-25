@@ -1,0 +1,17 @@
+{
+	 "plugins": [
+		 "unicorn",
+		 "import"
+	 ],
+	 "extends": [
+		 "xo/esnext",
+	 "plugin:unicorn/recommended",
+	 "plugin:import/recommended"
+	 ],
+	 "rules": {
+				"import/no-unresolved": ["error", { commonjs: true }]
+	 },
+	 "parserOptions": {
+				"sourceType": "script"
+	 }
+}
