@@ -13,16 +13,19 @@ module.exports = function (options) {
 				'sourcemap' in opts ? opts.sourcemap : // Rollup options
 					opts.sourceMap !== false; // Old style Rollup options
 			Object.assign(options, {
-				parser: {
-					plugins: {
+				parser: Object.assign({}, options.parser || {}, {
+					plugins: Object.assign({}, options.parser && options.parser.plugins || {}, {
 						dynamicImport: true
-					},
+					}),
 					onParserInstallation(acorn) {
+						if (options.onParserInstallation) {
+							options.onParserInstallation(acorn);
+						}
 						// Patch acorn to support dynamic import
 						// eslint-disable-next-line import/no-extraneous-dependencies
 						require('acorn-dynamic-import/lib/inject').default(acorn);
 					}
-				}
+				})
 			});
 		},
 		transform(code, id) {
