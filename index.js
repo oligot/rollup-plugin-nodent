@@ -14,7 +14,7 @@ module.exports = function (options) {
 					opts.sourceMap !== false; // Old style Rollup options
 			Object.assign(options, {
 				parser: Object.assign({}, options.parser || {}, {
-					plugins: Object.assign({}, options.parser && options.parser.plugins || {}, {
+					plugins: Object.assign({}, (options.parser && options.parser.plugins) || {}, {
 						dynamicImport: true
 					}),
 					onParserInstallation(acorn) {
